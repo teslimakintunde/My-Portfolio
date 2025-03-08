@@ -2,20 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  @apply max-w-[1300px];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.background-image {
+  background-image: url("/HeroImage.jpg");
+  background-size: cover; /* or 'contain' */
+  background-position: 50% 50%; /* adjust as needed */
+  height: 100vh; /* set height */
+  width: 100%; /* set width */
+  position: relative; /*or any other positioning */
+}
+.image-container {
+  position: relative;
+ width: 100%; /* Adjust as needed */
+  /* height: 100%; Adjust as needed */
+  overflow: hidden;
+  border: red; /* Hide overflow if necessary */
+}
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    100deg,
+    rgba(30, 113, 255, 1) 39%,
+    rgba(30, 113, 255, 0.2) 100%
+  ); /* Adjust angle and colors */
+  z-index: 1; /* Ensure it sits above the background */
+}
+
+/* For tablets (991px and less) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .background-image {
+    background-position: 80% 50%; /* adjust as needed */
+    height: 680px; /* set height */
+  }
+  .gradient-overlay {
+    height: 100%;
+    width: 100%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* For desktops (768px and less) */
+@media (max-width: 768px) and (min-width: 480px) {
+  .background-image {
+    background-position: 80% 50%; /* adjust as needed */
+    /* set height */
+  }
+  .hero-section{
+    height: 600px;
+  }
+}
+/* For desktops (768px and less) */
+@media (max-width: 480px) {
+  .background-image {
+    background-position: 75% 50%; /* adjust as needed */
+    
+  }
+  .hero-section{
+    height: 600px;
+  }
+}
+
+
+.custom-nav-btn {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background-color: gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Left Arrow */
+.swiper-button-prev.custom-nav-btn {
+  background-image: url('/') !important;
+}
+
+/* Right Arrow */
+.swiper-button-next.custom-nav-btn {
+  background-image: url('/') !important;
+}
+
+/* Hover Effect */
+.custom-nav-btn:hover {
+  background-color: #555 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .custom-nav-btn {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-nav-btn {
+    width: 50px !important;
+    height: 50px !important;
+  }
 }
