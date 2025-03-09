@@ -81,7 +81,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-[26px] md:text-[40px] text-primaryColor"
         >
-          Let's Work Together
+          Let&apos;s Work Together
         </motion.h3>
         <motion.p
           variants={fadeIn("up", 0.2)}
@@ -90,7 +90,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="font-roboto text-[18px] sm:text-[20px] mt-5 sm:mt-7"
         >
-          Let's talk about your project.
+          Let&apos;s talk about your project.
         </motion.p>
       </div>
       <div>

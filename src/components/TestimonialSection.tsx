@@ -121,7 +121,7 @@ const TestimonialSection = () => {
                     />
                     <div className="mt-5">
                       <p className="text-[16px] text-textColorTwo font-roboto mb-4">
-                        "{testimonial.message}"
+                        &ldquo;{testimonial.message}&rdquo;
                       </p>
                       <h3 className="text-xl font-Oswald font-semibold">
                         {testimonial.name}
