@@ -66,7 +66,7 @@ export default function RootLayout({
           type="image/x-icon"
         />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        {/* <link rel="manifest" href="/site.webmanifest" /> */}
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://yourwebsite.com" />
