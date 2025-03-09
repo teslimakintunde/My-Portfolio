@@ -57,7 +57,8 @@ html {
     /* set height */
   }
   .hero-section{
-    height: 600px;
+    /* height: 680px; */
+    height: auto;
   }
 }
 /* For desktops (768px and less) */
@@ -66,9 +67,9 @@ html {
     background-position: 75% 50%; /* adjust as needed */
     
   }
-  .hero-section{
+  /* .hero-section{
     height: 600px;
-  }
+  } */
 }
 
 

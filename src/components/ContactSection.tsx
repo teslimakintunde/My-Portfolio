@@ -160,7 +160,7 @@ const ContactSection = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-5">
-              <button className="bg-bgTwo flex shrink-0 text-white sm:text-[12px] md:text-[15px] font-medium font-roboto px-5 py-3 rounded-md mt-5">
+              <button className="bg-bgTwo flex shrink-0 text-white sm:text-[15px] md:text-[15px] font-medium font-roboto px-5 py-3 rounded-md mt-5">
                 Submit
               </button>
               {status && (

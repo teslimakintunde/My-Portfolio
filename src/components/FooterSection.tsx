@@ -15,7 +15,7 @@ const FooterSection = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className=""
+            className="-mt-5"
           >
             <motion.div variants={fadeIn("up", 0.2)}>
               <Link href={"/"}>
@@ -80,7 +80,7 @@ const FooterSection = () => {
               ))}
             </div>
             <motion.div variants={fadeIn("up", 0.6)} className="">
-              <button className="bg-bgTwo flex shrink-0 text-white sm:text-[12px] md:text-[15px] font-medium font-roboto px-5 py-3 rounded-md mt-5 hover:bg-white hover:text-royalBlue transition duration-300">
+              <button className="bg-bgTwo flex shrink-0 text-white sm:text-[12px] md:text-[15px] font-medium font-roboto px-5 py-3 rounded-md mt-5 hover:bg-white hover:text-royalBlue transition duration-300 mb-[20px]">
                 Get In Touch
               </button>
             </motion.div>
@@ -92,7 +92,7 @@ const FooterSection = () => {
             viewport={{ once: true }}
             className="ml-auto w-full"
           >
-            <div className=" text-white font-roboto flex flex-wrap sm:justify-end  ">
+            <div className=" text-white font-roboto gap-y-5 flex flex-wrap sm:justify-end   ">
               {menuLinks.map((link, index) => (
                 <motion.div
                   key={link.id}
