@@ -13,7 +13,7 @@ const HeroSection = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="w-full sm:max-w-[800px] lg:max-w-[800px] xl:max-w-[1050px] mt-[150px] lg:mt-[200px]"
+              className="w-full sm:max-w-[800px] lg:max-w-[800px] xl:max-w-[1050px] mt-[150px] lg:mt-[160px]  xl:mt-[200px]"
             >
               <motion.h1
                 variants={fadeIn("up", 0.2)}
@@ -22,9 +22,10 @@ const HeroSection = () => {
               >
                 Hi, I’m Tesak, A Skilled Frontend Engineer
               </motion.h1>
+
               <motion.p
                 variants={fadeIn("up", 0.5)}
-                className="font-roboto text-white text-[18px] sm:text-[20px] sm:max-w-[50ch] md:max-w-[55ch] max-w-[60ch] mt-[30]"
+                className="font-roboto text-white text-[18px]  sm:text-[20px] sm:max-w-[50ch] md:max-w-[55ch] max-w-[60ch] mt-[20px] sm:mt-[30px]"
               >
                 I am expert in designing Faster, efficient and SEO-friendly
                 websites as well as transforming concept into seamless user
@@ -32,7 +33,7 @@ const HeroSection = () => {
               </motion.p>
               <motion.div
                 variants={fadeIn("up", 0.8)}
-                className="font-roboto flex flex-col sm:flex-row gap-5 sm:gap-8 mt-[60px]"
+                className="font-roboto flex flex-col sm:flex-row gap-5 sm:gap-8 mt-[60px] sm:mt-[50px] xl:mt-[40px]"
               >
                 <button className="bg-white hover:bg-bgTwo hover:text-white transition duration-300 font-medium px-10 py-3 text-royalBlue rounded-md">
                   Get In Touch
