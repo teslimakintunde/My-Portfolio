@@ -9,7 +9,7 @@ import { fadeIn } from "../../variant";
 const FaqSection = () => {
   const [activeQuestion, setActiveQuetion] = useState<number | null>(null);
   return (
-    <section className="bg-bgOne py-[50px] md:py-[100px]" id="faq">
+    <section className="bg-bgOne py-[50px] md:py-[100px]" id="faqs">
       <motion.h3
         variants={fadeIn("up", 0.2)}
         initial="hidden"

@@ -13,9 +13,10 @@ html {
   background-image: url("/HeroImage.jpg");
   background-size: cover; /* or 'contain' */
   background-position: 50% 50%; /* adjust as needed */
-  height: 100vh; /* set height */
+  height: 800px; /* set height */
   width: 100%; /* set width */
-  position: relative; /*or any other positioning */
+   /* position: absolute; 
+  z-index:0;  */
 }
 .image-container {
   position: relative;
@@ -24,11 +25,18 @@ html {
   overflow: hidden;
   border: red; /* Hide overflow if necessary */
 }
+.hero-Zindex{
+  position: relative;
+  z-index: 49;
+}
+.hero-section{
+  position: relative;
+}
 .gradient-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: linear-gradient(
     100deg,
@@ -55,16 +63,18 @@ html {
   .background-image {
     background-position: 80% 50%; /* adjust as needed */
     /* set height */
+    height: auto;
   }
   .hero-section{
     /* height: 680px; */
-    height: auto;
+    /* height: auto; */
   }
 }
 /* For desktops (768px and less) */
 @media (max-width: 480px) {
   .background-image {
     background-position: 75% 50%; /* adjust as needed */
+    height: auto;
     
   }
   /* .hero-section{

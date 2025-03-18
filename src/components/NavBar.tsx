@@ -19,7 +19,7 @@ const NavBar = () => {
   }, []);
   return (
     <header
-      className={` w-full py-1 font-roboto fixed z-50 top-0 left-0 transition-all duration-300  ${
+      className={` w-full py-1 font-roboto fixed z-50 top-0 left-0 transition-all duration-300   ${
         isScrolled
           ? "bg-royalBlue text-slate-950 backdrop-blur-md shadow-lg"
           : "bg-transparent"

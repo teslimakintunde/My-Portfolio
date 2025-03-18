@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     "I am expert in designing Faster, efficient and SEO-friendly websites as well as transforming concept into seamless user experiences.",
   keywords:
     "Frontend Developer, Web Development, SEO, UI/UX, JavaScript, React, Next.js, Akintunde Teslim",
-  authors: [{ name: "Akintunde Teslim", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Akintunde Teslim", url: "https://tesak.vercel.app" }],
   robots: "index, follow",
-  metadataBase: new URL("https://yourwebsite.com"), // Change this to your actual domain
+  metadataBase: new URL("https://tesak.vercel.app"), // Change this to your actual domain
   openGraph: {
     title: "Meet Akintunde Teslim: A Skilled Frontend  Engineer",
     description:
       "I am expert in designing Faster, efficient and SEO-friendly websites as well as transforming concept into seamless user experiences.",
-    url: "https://yourwebsite.com",
+    url: "https://tesak.vercel.app",
     images: [
       {
         url: "/hero-image.png",
@@ -69,7 +69,7 @@ export default function RootLayout({
         {/* <link rel="manifest" href="/site.webmanifest" /> */}
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://yourwebsite.com" />
+        <link rel="canonical" href="https://tesak.vercel.app" />
       </head>
       <body
         className={`${roboto.className} ${oswald.className} ${abriFatface.className} antialiased`}

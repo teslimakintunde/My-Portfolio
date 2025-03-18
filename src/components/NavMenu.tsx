@@ -29,7 +29,7 @@ const NavMenu = () => {
           className="text-black"
         />
       </Link>
-      <ul className="hidden md:flex flex-row items-center">
+      <ul className="hidden lg:flex flex-row gap-3 items-center">
         <Link
           href={"/"}
           className="hover:bg-blue-400/100 px-2 py-2 hover:rounded-sm transition duration-300"
@@ -55,6 +55,12 @@ const NavMenu = () => {
           <li>Testimonials</li>
         </Link>
         <Link
+          href={"/#faqs"}
+          className="hover:bg-blue-400/100 px-2 py-2 hover:rounded-sm transition duration-300"
+        >
+          <li>Faqs</li>
+        </Link>
+        <Link
           href={"/#contact"}
           className="hover:bg-blue-400/100 px-2 py-2 hover:rounded-sm transition duration-300"
         >
@@ -70,7 +76,7 @@ const NavMenu = () => {
 
       {/* Mobile Menu Icon */}
       <button
-        className={`md:hidden text-3xl cursor-pointer z-[1001] relative border border-bgTwo p-2 transition-colors duration-300 ${
+        className={`lg:hidden text-3xl cursor-pointer z-[1001] relative border border-bgTwo p-2 transition-colors duration-300 ${
           open ? "text-black" : "text-white"
         }`}
         onClick={() => setOpen(!open)}
@@ -85,47 +91,49 @@ const NavMenu = () => {
           open ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 flex flex-col items-center pt-20 gap-6 z-[900]`}
       >
-        <Link
-          href={"/#hero"}
-          onClick={() => setOpen(false)}
-          className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
-        >
-          Home
-        </Link>
-        <Link
-          href={"/#projects"}
-          onClick={() => setOpen(false)}
-          className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
-        >
-          Featured Project
-        </Link>
-        <Link
-          href={"/#services"}
-          onClick={() => setOpen(false)}
-          className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
-        >
-          Services
-        </Link>
-        <Link
-          href={"/#testimonials"}
-          onClick={() => setOpen(false)}
-          className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
-        >
-          Testimonials
-        </Link>
-        <Link
-          href={"/#contact"}
-          onClick={() => setOpen(false)}
-          className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
-        >
-          Contact
-        </Link>
-        <Link
-          href={"/#contact"}
-          className="px-4 py-2 bg-bgTwo text-white hover:border-bgTwo hover:border rounded-md ml-3 hover:bg-white hover:text-royalBlue duration-300 transition"
-        >
-          Get In Touch
-        </Link>
+        <div className="flex flex-col items-center gap-5 bg-bgOne w-full">
+          <Link
+            href={"/#hero"}
+            onClick={() => setOpen(false)}
+            className="px-6 py-3 w-full  text-center hover:bg-bgTwo transition duration-300"
+          >
+            Home
+          </Link>
+          <Link
+            href={"/#projects"}
+            onClick={() => setOpen(false)}
+            className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
+          >
+            Featured Project
+          </Link>
+          <Link
+            href={"/#services"}
+            onClick={() => setOpen(false)}
+            className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
+          >
+            Services
+          </Link>
+          <Link
+            href={"/#testimonials"}
+            onClick={() => setOpen(false)}
+            className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
+          >
+            Testimonials
+          </Link>
+          <Link
+            href={"/#contact"}
+            onClick={() => setOpen(false)}
+            className="px-6 py-3 w-full text-center hover:bg-bgTwo transition duration-300"
+          >
+            Contact
+          </Link>
+          <Link
+            href={"/#contact"}
+            className="px-4 py-2 bg-bgTwo text-white hover:border-bgTwo hover:border rounded-md ml-3 hover:bg-white hover:text-royalBlue duration-300 transition w-max mb-5"
+          >
+            Get In Touch
+          </Link>
+        </div>
       </div>
     </nav>
   );

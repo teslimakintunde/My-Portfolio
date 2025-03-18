@@ -5,15 +5,17 @@ import { fadeIn } from "../../variant";
 const HeroSection = () => {
   return (
     <div className="hero-section" id="hero">
+      <div className="gradient-overlay"></div>
       <div className="image-container hero-section">
-        <div className="background-image"></div>
-        <div className="gradient-overlay">
-          <div className="container">
+        <div className="gradient-overlay"></div>
+        <div className="background-image">
+          <div className="container hero-Zindex">
+            <div className="lg:py-[70px] sm:py-[45px] md:py-[60px] py-[40px]"></div>
             <motion.div
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="w-full sm:max-w-[800px] lg:max-w-[800px] xl:max-w-[1050px] mt-[150px] lg:mt-[160px]  xl:mt-[200px]"
+              className="w-full sm:max-w-[800px] lg:max-w-[800px] xl:max-w-[1050px] py-[40px]"
             >
               <motion.h1
                 variants={fadeIn("up", 0.2)}
@@ -51,6 +53,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 {
   /* Hi, I’m Tesak, Web Designer And Webflow Developer */
 }

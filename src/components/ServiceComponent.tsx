@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const ServiceComponent = () => {
   return (
-    <div className="w-[33%] h-full flex flex-col gap-5 text-center rounded">
+    <div
+      className="w-[33%] h-full flex flex-col gap-5 text-center rounded"
+      id="services"
+    >
       <article className="h-full bg-bgThree p-[30px] rounded">
         <div className="h-full flex flex-col justify-stretch items-center  bg-white">
           <span>
