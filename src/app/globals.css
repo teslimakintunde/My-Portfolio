@@ -41,9 +41,9 @@ html {
   background: linear-gradient(
     100deg,
     rgba(30, 113, 255, 1) 39%,
-    rgba(30, 113, 255, 0.2) 100%
+    rgba(30, 113, 255, 0.2) 80%
   ); /* Adjust angle and colors */
-  z-index: 1; /* Ensure it sits above the background */
+  z-index: 1; 
 }
 
 /* For tablets (991px and less) */

@@ -70,7 +70,7 @@ const ContactSection = () => {
 
   return (
     <section
-      className="container py-[30px] sm:py-[40px] md:py-[100px]"
+      className="container py-[30px] sm:py-[40px] md:py-[100px] bg-white"
       id="contact"
     >
       <div className="max-w-[800px] mx-auto text-center">

@@ -30,7 +30,7 @@ const data = [
 
 const HireMeSection = () => {
   return (
-    <section className="container py-[60px] lg:py-[80px]">
+    <section className="container py-[60px] lg:py-[80px] bg-white">
       <div className="mb-[60px] lg:mb-[80px]">
         <motion.h3
           variants={fadeIn("up", 0.2)}
