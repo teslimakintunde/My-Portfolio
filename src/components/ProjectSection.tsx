@@ -172,15 +172,27 @@ const ProjectSection = () => {
     <section className="container font-roboto bg-white" id="projects">
       <div className="flex flex-col gap-5">
         <div className="py-[30px] sm:py-[40px] md:py-[60px] lg:py-[80px]">
-          <motion.h2
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="text-center text-[29px] text-primaryColor font-Oswald lg:text-[45px] font-bold mb-[40px] sm:mb-[50px] md:mb-[60px] lg:mb-[80px]"
-          >
-            Featured Projects
-          </motion.h2>
+          <div className="mb-[40px] sm:mb-[50px] md:mb-[60px] lg:mb-[80px]">
+            <motion.h2
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-center text-[29px] text-primaryColor font-Oswald lg:text-[45px] font-bold"
+            >
+              Featured Projects
+            </motion.h2>
+            <motion.p
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-center text-textColorTwo text-[16px] sm:text-[20px] mt-[20px] max-w-[60ch] mx-auto"
+            >
+              Take a look at what i have done in the past. I will be excited to
+              bring your vision into reality as well
+            </motion.p>
+          </div>
           <div className="grid gap-y-[30px] grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 mx-auto">
             {data.map((item, index) => (
               <motion.div
