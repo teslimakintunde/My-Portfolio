@@ -102,7 +102,7 @@
 
 // export default ProjectSection;
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variant";
@@ -141,6 +141,33 @@ const data = [
   },
 ];
 const ProjectSection = () => {
+  const [sanitizedData, setSanitizedData] = useState<typeof data | null>(null);
+
+  useEffect(() => {
+    // Sanitize data only on client-side after mount
+    setSanitizedData(
+      data.map((item) => ({
+        ...item,
+        desc: DOMPurify.sanitize(item.desc),
+      }))
+    );
+  }, []);
+
+  // Show a fallback until sanitizedData is ready
+  if (!sanitizedData) {
+    return (
+      <section className="container font-roboto bg-white" id="projects">
+        <div className="flex flex-col gap-5">
+          <div className="py-[30px] sm:py-[40px] md:py-[60px] lg:py-[80px]">
+            <h2 className="text-center text-[29px] text-primaryColor font-Oswald lg:text-[45px] font-bold mb-[40px] sm:mb-[50px] md:mb-[60px] lg:mb-[80px]">
+              Featured Projects
+            </h2>
+            <div className="text-center">Loading projects...</div>
+          </div>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className="container font-roboto bg-white" id="projects">
       <div className="flex flex-col gap-5">
