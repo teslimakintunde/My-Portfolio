@@ -17,21 +17,21 @@ const HeroSection = () => {
               viewport={{ once: true }}
               className="w-full sm:max-w-[800px] lg:max-w-[800px] xl:max-w-[1050px] py-[40px]"
             >
-              <motion.h1
+              {/* <motion.h1
                 variants={fadeIn("up", 0.2)}
                 className="sm:max-w-[25ch] md:max-w-none font-bold font-Oswald text-[28px] sm:text-[40px]
                md:text-[60px] lg:text-[60px] xl:text-[90px] leading-[1.5] lg:leading-[1.3] text-white tracking-[2px]"
               >
                 Hi, I’m Tesak, A Skilled Frontend Engineer
-              </motion.h1>
+              </motion.h1> */}
 
-              {/* <motion.h1
+              <motion.h1
                 variants={fadeIn("up", 0.2)}
                 className="max-w-[20ch] font-bold font-Oswald text-[28px] sm:text-[40px]
                md:text-[60px] lg:text-[80px] xl:text-[90px] leading-[1.5] lg:leading-[1.3] text-white tracking-[2px]"
               >
                 Hi, I’m Tesak, A Skilled Full Stack Engineer
-              </motion.h1> */}
+              </motion.h1>
 
               <motion.p
                 variants={fadeIn("up", 0.5)}
