@@ -6,12 +6,16 @@ import HireMeSection from "@/components/HireMeSection";
 import ProjectSection from "@/components/ProjectSection";
 import ServiceSection from "@/components/ServiceSection";
 import TestimonialSection from "@/components/TestimonialSection";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
-      <ProjectSection />
+      {/* <ProjectSection /> */}
+      <Suspense fallback={<div>Loading projects...</div>}>
+        <ProjectSection />
+      </Suspense>
       <ServiceSection />
       <HireMeSection />
       <FaqSection />

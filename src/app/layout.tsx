@@ -18,7 +18,7 @@ const abriFatface = Abril_Fatface({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "Akintunde Teslim- Frontend Engineer",
+  title: "Akintunde Teslim- Full Stack Engineer",
   description:
     "I am expert in designing Faster, efficient and SEO-friendly websites as well as transforming concept into seamless user experiences.",
   keywords:
