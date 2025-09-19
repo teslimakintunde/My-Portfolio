@@ -11,42 +11,42 @@ import { useRouter, useSearchParams } from "next/navigation";
 const data = [
   {
     id: 1,
-    img: "/fashion-app.png",
+    img: "/fashion-app.webp",
     title: "Fashion Project Management App",
     desc: "This Fashion Project Management App is a full-stack web application designed to help fashion companies track and manage client projects efficiently. Built with <strong class='text-primaryColor underline'>React (Vite)</strong>  for the frontend and <strong class='text-primaryColor underline'>Node.js</strong> for the backend, it uses <strong class='text-primaryColor underline'>Redux Toolkit (RTK)</strong>  and <strong class='text-primaryColor underline'>RTK Query</strong>  for streamlined state management and API interactions. The app allows company users to register, track, and manage client projects, ensuring smooth collaboration and workflow automation.",
     link: "https://fashion-store-app-sigma.vercel.app",
   },
   {
     id: 2,
-    img: "/task-management-app.png",
+    img: "/task-management-app.webp",
     title: "Task-Management-App",
     desc: "This Task Management App is a responsive web application built with <strong class='text-primaryColor underline'>React (Vite)</strong> for the frontend and <strong class='text-primaryColor underline'>Node.js (Express)</strong>  for the backend. Unlike traditional Redux-based solutions, it leverages React <strong class='text-primaryColor underline'>Context API</strong> for lightweight global state management, making it ideal for small to medium-sized teams. The app helps users organize, track, and collaborate on tasks efficiently with a clean and intuitive interface.",
     link: "https://task-frontend-tawny.vercel.app",
   },
   {
     id: 3,
-    img: "/car-rental.png",
+    img: "/car-rental.webp",
     title: "Car Rental App",
     desc: "I developed a full-stack car rental app using <strong class='text-primaryColor underline'>Next.js</strong> for the frontend and backend, <strong class='text-primaryColor underline'>Tailwind css</strong> for responsive styling, and <strong class='text-primaryColor underline'>TypeScript</strong> for type safety. <strong class='text-primaryColor underline'>Prisma</strong> served as the <strong class='text-primaryColor underline'>ORM</strong> with <strong class='text-primaryColor underline'>MongoDb</strong> as the database to manage car listings, bookings, and user data.<strong class='text-primaryColor underline'>Auth.js</strong> (NextAuth) handled user authentication, enabling secure login and registration. The app features dynamic routing, search filters, booking management, and a seamless user experience.",
     link: "https://fullstack-ride-app.vercel.app",
   },
   {
     id: 4,
-    img: "/blog-app.png",
+    img: "/blog-app.webp",
     title: "Blog App",
     desc: "I developed a full-stack blog app using <strong class='text-primaryColor underline'>Next.js</strong> for both frontend and backend, <strong class='text-primaryColor underline'>Tailwind CSS</strong> for responsive styling, and <strong class='text-primaryColor underline'>TypeScript</strong>  for type safety. Prisma was used as the ORM with MongoDB as the database to manage posts, users, and comments. <strong class='text-primaryColor underline'>Auth.js</strong> (NextAuth) handled user authentication, supporting email and social logins. The app features dynamic routing, server-side rendering (SSR), and a seamless user experience.",
     link: "https://blog-app-eight-azure.vercel.app",
   },
   {
     id: 5,
-    img: "/saas-landing-page.png",
+    img: "/saas-landing-page.webp",
     title: "Saas landing Page",
     desc: "I designed a SaaS landing page using <strong class='text-primaryColor underline'>Next.js</strong> for fast performance and SEO optimization, <strong class='text-primaryColor underline'>Tailwind CSS</strong> for responsive and modern styling, and <strong class='text-primaryColor underline'>TypeScript</strong> for type safety and maintainability. The page features a clean, user-friendly design with sections like a hero, features, pricing, and a call-to-action, delivering an optimized and scalable experience.",
     link: "https://landing-page-alpha-flame-70.vercel.app/",
   },
   {
     id: 6,
-    img: "/digital-product.png",
+    img: "/digital-product.webp",
     title: "Product landing Page",
     desc: "I designed and developed a digital product landing page using <strong class='text-primaryColor underline'>Next.js</strong> for fast performance and SEO optimization, <strong class='text-primaryColor underline'>Tailwind CSS</strong> for responsive and utility-first styling, and <strong class='text-primaryColor underline'>TypeScript</strong> for type safety and maintainability. The page includes a hero section, product features, testimonials, pricing, and a call-to-action (CTA), all built with a clean and modern design. Tailwind's flexibility and Next.js's static generation ensure a seamless user experience.",
     link: "https://digital-product-landingpage-pink.vercel.app",
@@ -149,7 +149,7 @@ const ProjectSection = () => {
                         src={item.img}
                         alt={`${item.title} screenshot`}
                         fill
-                        className="rounded-t-md"
+                        className="rounded-t-md object-cover"
                       />
                     </Link>
                   </div>

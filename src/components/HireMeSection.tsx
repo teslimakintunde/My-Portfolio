@@ -58,8 +58,11 @@ const HireMeSection = () => {
                   <Image
                     src={item.icon}
                     alt="speed and efficiency icon"
-                    width={100}
-                    height={100}
+                    width={80} // Fallback width
+                    height={80} // Fallback height
+                    sizes="(max-width: 640px) 60px, (max-width: 1024px) 70px, 80px" // Responsive sizes
+                    className="w-[60px] sm:w-[70px] lg:w-[80px] h-auto" // Responsive width
+                    style={{ objectFit: "contain" }} // Maintain aspect ratio
                   />
                 </div>
                 <div className="flex items-center flex-col">

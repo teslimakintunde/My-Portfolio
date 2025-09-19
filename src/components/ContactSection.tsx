@@ -10,11 +10,6 @@ type FormData = {
   message: string;
 };
 
-// type ApiResponse = {
-//   success: boolean;
-//   message?: string;
-// };
-
 const ContactSection = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",

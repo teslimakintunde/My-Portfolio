@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 const oswald = Oswald({
-  weight: ["400", "400", "500", "700"],
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
 });
 const abriFatface = Abril_Fatface({
@@ -22,18 +22,20 @@ export const metadata: Metadata = {
   description:
     "I am expert in designing Faster, efficient and SEO-friendly websites as well as transforming concept into seamless user experiences.",
   keywords:
-    "Frontend Developer, Web Development, SEO, UI/UX, JavaScript, React, Next.js, Akintunde Teslim",
-  authors: [{ name: "Akintunde Teslim", url: "https://tesak.vercel.app" }],
+    "Frontend Developer, Full stack developer, Web Development, SEO, UI/UX, JavaScript, React, Next.js, Node.js, Express.js Akintunde Teslim",
+  authors: [
+    { name: "Akintunde Teslim", url: "https://tesak-full-stack.vercel.app" },
+  ],
   robots: "index, follow",
-  metadataBase: new URL("https://tesak.vercel.app"), // Change this to your actual domain
+  metadataBase: new URL("https://tesak-full-stack.vercel.app"), // Change this to your actual domain
   openGraph: {
-    title: "Meet Akintunde Teslim: A Skilled Frontend  Engineer",
+    title: "Meet Akintunde Teslim: A Skilled Full Stack Engineer",
     description:
       "I am expert in designing Faster, efficient and SEO-friendly websites as well as transforming concept into seamless user experiences.",
-    url: "https://tesak.vercel.app",
+    url: "https://tesak-full-stack.vercel.app",
     images: [
       {
-        url: "/hero-image.png",
+        url: "/hero-image-full-stack.png",
         width: 1260,
         height: 800,
       },
@@ -43,10 +45,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@yourTwitterHandle", // Replace with your actual Twitter handle
     creator: "@yourTwitterHandle",
-    title: "Akintunde Teslim - Frontend Engineer",
+    title: "Akintunde Teslim - Full-Stack Engineer",
     description:
       "I specialize in designing fast, efficient, and SEO-friendly websites, creating seamless user experiences.",
-    images: "/hero-image.png",
+    images: "/hero-image-full-stack.png",
   },
 };
 

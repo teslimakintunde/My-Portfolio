@@ -12,8 +12,8 @@ const ServiceComponent = () => {
           <span>
             <Image
               src="/website-development-icon.svg"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               alt="website-development-icon"
               className="mt-4"
             />

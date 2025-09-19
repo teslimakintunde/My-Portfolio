@@ -50,13 +50,15 @@ const ServiceSection = () => {
             >
               <article className="h-full hover:bg-bgTwo transition duration-500 bg-bgThree p-[10px] sm:p-[15px] rounded">
                 <div className="h-full flex flex-col justify-stretch items-center  bg-white">
-                  <span>
+                  <span className="">
                     <Image
                       src={item.icon}
-                      width={100}
-                      height={100}
-                      alt="website-development-icon"
-                      className="mt-4"
+                      width={80}
+                      height={80}
+                      alt={`${item.title}-icon`}
+                      sizes="(max-width: 640px) 60px, (max-width: 1024px) 70px, 80px"
+                      className="w-[60px] sm:w-[70px] lg:w-[80px] h-auto mt-5"
+                      style={{ objectFit: "contain" }}
                     />
                   </span>
                   <div className="p-4">

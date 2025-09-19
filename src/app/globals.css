@@ -10,7 +10,7 @@ html {
 }
 
 .background-image {
-  background-image: url("/HeroImage.jpg");
+  background-image: url("/HeroImage.webp");
   background-size: cover; /* or 'contain' */
   background-position: 50% 50%; /* adjust as needed */
   height: 800px; /* set height */

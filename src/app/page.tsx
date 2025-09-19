@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      {/* <ProjectSection /> */}
+
       <Suspense fallback={<div>Loading projects...</div>}>
         <ProjectSection />
       </Suspense>

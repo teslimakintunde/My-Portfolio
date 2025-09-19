@@ -19,49 +19,21 @@ const FooterSection = () => {
           >
             <motion.div variants={fadeIn("up", 0.2)}>
               <Link href={"/"}>
-                <Image src={"/logo.svg"} width={150} height={150} alt="logo" />
+                <Image
+                  src={"/logo.svg"}
+                  width={150}
+                  height={150}
+                  alt="logo"
+                  priority
+                />
               </Link>
             </motion.div>
-            {/* <div className="flex flex-row gap-2 my-5">
-              <Link href={"/"}>
-                <Image
-                  src={"/linkedin-icon.svg"}
-                  width={30}
-                  height={30}
-                  alt="linkedin"
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  src={"/facebook-icon.svg"}
-                  width={30}
-                  height={30}
-                  alt="linkedin"
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  src={"/tweeter-icon.svg"}
-                  width={30}
-                  height={30}
-                  alt="linkedin"
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  src={"/linkedin.svg"}
-                  width={30}
-                  height={30}
-                  alt="linkedin"
-                />
-              </Link>
-            </div> */}
-            {/* Social Icons Appear One by One */}
+
             <div className="flex flex-row gap-2 my-5">
               {[
                 "linkedin-icon",
                 "facebook-icon",
-                "tweeter-icon",
+                "twitter-svg",
                 "linkedin",
               ].map((icon, index) => (
                 <motion.div

@@ -23,10 +23,10 @@ const NavMenu = () => {
       <Link href={"/"}>
         <Image
           src={"/logo.svg"}
-          alt=""
+          alt="logo"
           width={100}
           height={64}
-          className="text-black"
+          className="text-black w-auto h-auto"
         />
       </Link>
       <ul className="hidden lg:flex flex-row gap-3 items-center">

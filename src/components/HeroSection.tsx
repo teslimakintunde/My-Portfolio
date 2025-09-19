@@ -61,14 +61,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-{
-  /* Hi, I’m Tesak, Web Designer And Webflow Developer */
-}
-{
-  /* Transforming Concept Into Seamless User Experiences */
-}
-{
-  /* Hi, I’m Tesak, A Professional Frontend Engineer and web
-                developer */
-}
